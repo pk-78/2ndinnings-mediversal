@@ -71,7 +71,14 @@ export default function App() {
               </LoginPrivateRoute>
             }
           />
-          <Route path="/" element={<Index />} />
+          <Route
+            path="/"
+            element={
+              <LoginPrivateRoute>
+                <BanyanThemePageWithAdmin />
+              </LoginPrivateRoute>
+            }
+          />
           <Route path="/plans" element={<Plan />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/services" element={<ServicesPage />} />

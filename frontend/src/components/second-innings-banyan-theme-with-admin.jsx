@@ -110,7 +110,7 @@ const Login = ({ role }) => {
             navigate("/assessor-dashboard");
           }
         },
-      }
+      },
     );
   };
 
@@ -206,13 +206,13 @@ export default function BanyanThemePageWithAdmin() {
                 setRole("Front Desk");
               }}
             />
-            <LoginButton
+            {/* <LoginButton
               role="Care Manager"
               icon={Activity}
               onClick={() => {
                 setRole("Care Manager");
               }}
-            />
+            /> */}
             <LoginButton
               role="Home Care Staff"
               icon={Home}
